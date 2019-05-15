@@ -47,9 +47,9 @@
     function myFunction() {
         var firstName = document.getElementById("firstName").value;
         var shadeOfPink = document.getElementById("shadeOfPink").value;
-        document.write("Hello " + encodeURIComponent(firstName) + "!<br/>");
-        document.write("Here is your new pink software!");
-        document.write("<a href=\"javascript:history.go(-1)\">Retour</a>");
+        document.write("<center>Hello " + encodeURIComponent(firstName) + ", ");
+        document.write("here is your new pink software!");
+        document.write("<br/><a href=\"javascript:history.go(-1)\">Back</a></center>");
         document.body.style.background = shadeOfPink;
     }
     </script>
