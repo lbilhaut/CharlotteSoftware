@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>50 Shades of Pink</title>
+</head>
+<body>
+    <h1>Programmer for toddler!</h1>
+    <form onsubmit="myFunction()">
+        <div>
+            <label for="firstName" >What's your name? </label>
+            <input type="text" name="firstName" id="firstName" />
+        </div>
+        <br/>
+        <div>
+            <label for="shadeOfPink">Pick your favorite shade of pink</label>
+            <select name="shadeOfPink" id="shadeOfPink">
+                <option value="#F69ACD">pink</option>
+                <option value="#FC94AD">rose</option>
+                <option value="#FC46AA">fuscia</option>
+                <option value="#F15278">punch</option>
+                <option value="#FEC5E5">blush</option>
+                <option value="#FE7F9C">watermelon</option>
+                <option value="#FDA4B8">flamingo</option>
+                <option value="#FDAB9F">salmon</option>
+                <option value="#FC4C4E">strawberry</option>
+                <option value="#FE7D68">coral</option>
+                <option value="#FB9483">peach</option>
+                <option value="#FBBBCB">lemonade</option>
+                <option value="#FD5CA8">bubblegum</option>
+                <option value="#F69ABF">ballet slipper</option>
+                <option value="#E11584">magenta</option>
+                <option value="#FF1695">hot pink</option>
+
+
+
+            </select>
+        </div>
+        <br/>
+        <div>
+            <input class="formSubmitButton" type="submit" value="Let's see what happens!" id="submitButton" style="background-color: #F69ACD;"/>
+        </div>
+    </form>
+
+    <script>
+    function myFunction() {
+        var firstName = document.getElementById("firstName").value;
+        var shadeOfPink = document.getElementById("shadeOfPink").value;
+        document.write("Hello " + encodeURIComponent(firstName) + "!<br/>");
+        document.write("Here is your new pink software!");
+        document.write("<a href=\"javascript:history.go(-1)\">Retour</a>");
+        document.body.style.background = shadeOfPink;
+    }
+    </script>
+</body>
+</html>
